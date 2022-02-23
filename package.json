@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "mongoose": "^6.2.3"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server":"nodemon src/index"
+    "server": "nodemon src/index"
   },
   "repository": {
     "type": "git",
