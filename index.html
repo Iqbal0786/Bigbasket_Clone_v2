@@ -362,6 +362,7 @@
 </html>
 <script src="./scripts/slideupper.js"></script>
 <script src="./scripts/sliderfooter.js"></script>
+<script src="./scripts/login.js"></script>
 <script type="module">
     // importing the navbar and footer
     import navbar from './components/navbar.js'
@@ -380,7 +381,14 @@
     let cartdata= JSON.parse(localStorage.getItem("bigbasket"))
     document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
 
-    
-    
+
+//     nameApnd()
+//     function nameApnd(){
+//       let userData = JSON.parse(localStorage.getItem("userInfo")) || null;
+//       if(userData){
+//         let uName = document.getElementById("loginbutton");
+//         uName.innerHTML = userData.user.firstName;
+//       }
+//   }
 
 </script>
