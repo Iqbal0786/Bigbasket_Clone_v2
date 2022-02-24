@@ -6,11 +6,12 @@
 
 async function registerUser() {
     try{
-            let mail = {email:document.querySelector("#email").value,
+            let mail = {
                         name: document.getElementById("name").value,
+                        email:document.querySelector("#email").value,
                         password: document.getElementById("password").value
                       };
-            let response = await fetch("http://localhost:7000/register",{
+            let response = await fetch("http://localhost:9999/register",{
                 method:"POST",
                 body:JSON.stringify(mail),
                 headers:{
@@ -18,7 +19,10 @@ async function registerUser() {
                 }
             })
             let data = await response.json()
-            console.log(data)
+            if(data){
+                alert("Registration Successfull!!");
+                window.location.href="../login.html"
+            }
         } catch(err){
             console.log(err.message)
         }

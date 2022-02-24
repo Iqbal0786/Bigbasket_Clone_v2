@@ -5,7 +5,7 @@
       let pass = document.querySelector("#password").value;
       let mail = {email: id,
                   password: pass}
-                let response = await fetch("http://localhost:7000/login",{
+                let response = await fetch("http://localhost:9999/login",{
                 method:"POST",
                 body:JSON.stringify(mail),
                 headers:{
@@ -13,10 +13,17 @@
                 }
             })
             let data = await response.json()
-            console.log(data)
+            console.log(data.user)
             localStorage.setItem("UserInfo",JSON.stringify(data))
             // nameApnd()
-            window.location.href="../index.html"
+            if(data.message){
+              
+              alert(data.message)
+            }
+            else{
+              alert("Successfully Logged In ")
+              window.location.href="../products.html"
+            }
     }catch(err){
         console.log(err.message)
     }

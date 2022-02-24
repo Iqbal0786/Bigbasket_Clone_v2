@@ -23,6 +23,7 @@
     border: none;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 #formDiv>h3{
     text-align: center;
@@ -31,4 +32,11 @@
     font-size: 25px;
     margin-bottom: 10px;
      padding-top: 20px;
+}
+#formDiv >a{
+text-decoration: none;
+font-family:sans-serif;
+font-size: 15px;
+color: black;
+
 }
