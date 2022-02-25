@@ -1,0 +1,85 @@
+
+.button{
+    color: limegreen;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.popup{
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup-content{
+    width: 400px;
+    height: 500px;
+    background-color: #ffff;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    display:none;
+    color: limegreen;
+    font-weight: bolder;
+}
+
+.group{
+    width: 100%;
+    height: 30%;
+    margin-top: 20%;
+    transition: all .3s;
+    position: relative;
+}
+.textbox{
+    width: 80%;
+    border-style: none none solid none;
+    margin-top: 10%;
+}
+.textbox:focus{
+    border-color: red;
+}
+.email{
+   font-size: 15px;
+   margin-top: 60px;
+   width: 80%;
+   background-color: white;
+}
+.submit{
+   margin-top: 10px;
+   width: 80%;
+   background-color: limegreen;
+   font-size: 17px;
+   color: white;
+   border-radius: 5px;
+}
+.term{
+   font-size: 10px;
+   color: gray;
+}
+.about-you{
+    width: 400px;
+    height: 500px;
+    background-color: #ffff;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    display: none;
+    color: limegreen;
+    font-weight: bolder;
+}
+.name{
+    width: 40%;
+    border-style: none none solid none;
+    margin-top: 10%;
+}
+.margin{
+   margin-top: 60%;
+}

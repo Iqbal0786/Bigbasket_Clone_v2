@@ -1,0 +1,142 @@
+body {
+  margin: 0px;
+}
+#head {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid rgb(228, 225, 225);
+}
+#head > div {
+  width: 75%;
+  height: 65%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#number {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #979797;
+  margin-top: 50px;
+}
+#main_box {
+  display: flex;
+  border: 1px solid rgb(206, 199, 199);
+  height: 500px;
+  width: 75%;
+  margin: auto;
+  margin-top:20px;
+}
+#left {
+  border: 1px solid rgb(204, 200, 200);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#right {
+ 
+  flex: 4;
+  background-color: whitesmoke;
+}
+#left > div {
+  border-bottom: 1px solid rgb(148, 145, 145);
+
+  padding: 27px;
+  font-family: sans-serif;
+  color: #222222;
+}
+#left > div:nth-child(1) {
+  color: black;
+  font-weight: 700;
+  background-color: whitesmoke;
+}
+#left > div:nth-child(6) {
+  border: none;
+}
+
+input[type="radio"] {
+  border: 0px;
+  height: 2em;
+  width: 20px;
+}
+#right{
+    display: flex;
+    /* border:1px solid blue; */
+    height:400px;
+ 
+}
+#right>div:nth-child(1){
+    flex:1;
+}
+#right>div:nth-child(2){
+    flex:12;
+}
+#radio{
+    margin-left:30px;
+    margin-top:15px;
+}
+#details>p{
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-top:20px;
+}
+.first_line{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    
+}
+#card_details{
+    margin-top:40px;
+    color:gray;
+    font-family: sans-serif;
+    font-size:10px;
+}
+
+#card_no{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: whitesmoke;
+    margin-top:10px;
+    margin-bottom: 30px;  
+   
+}
+#sec_line{
+    display: flex;
+    gap:20px;
+}
+#valid{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: whitesmoke;
+    margin-top:10px;
+    margin-bottom: 30px; 
+
+}
+#cvv{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: whitesmoke;
+    margin-top:10px;
+    margin-bottom: 30px; 
+
+}
+#save{
+    display: flex;
+    gap:5px;
+    margin-bottom: 30px;
+}
+#checkbox{
+    margin-top:9px;
+}
+#pay{
+    width:30%;
+    height: 50px;
+    background-color: yellowgreen;
+    border:none;
+    color:white;
+}
+
+

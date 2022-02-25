@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://www.bbassets.com/static/v2498/images/favicon.ico?v=2498" type="image/x-icon" />
+    <title>checkout/id/1</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/checkout.css" />
+  </head>
+
+  <body>
+    <!-- header  -->
+    <div id="head">
+      <div id="BBimg">
+        <a href="index.html">
+          <img
+          src="https://www.bigbasket.com/static/v2489/common/img/bb_logo.png"
+          alt=""
+        />
+
+        </a>
+      
+        <h3 id="number">1860 123 1000</h3>
+      </div>
+    </div>
+
+    <!-- adddress and voucher -->
+    <div id="middle_box">
+      <div id="address">
+        <div id="location">
+          <span class="material-icons-outlined add"> location_on </span>
+          <p>Delivery Address</p>
+        </div>
+
+        <div id="credentials">
+          <!-- personal details -->
+
+          <p class="person">Personal Details</p>
+          <div class="name_line">
+            <div class="name">
+              <label for="first_name">
+                <sup class="star">*</sup> Enter first name</label
+              >
+              <input type="text" id="first_name" />
+            </div>
+
+            <div class="name">
+              <label for="last_name">
+                <sup class="star">*</sup> Enter last name</label
+              >
+              <input type="text" id="last_name" />
+            </div>
+
+            <div class="name">
+              <label for="contact">
+                <sup class="star">*</sup> Enter Contact Number</label
+              >
+              <input type="text" id="contact" />
+            </div>
+          </div>
+
+          <!-- address details -->
+          <p class="person gap">Address Details</p>
+          <div class="addres_line">
+            <div class="first_add name_line">
+              <div class="name">
+                <label for="house"><sup class="star">*</sup> House No</label>
+                <input type="text" id="house" />
+              </div>
+              <div class="name x">
+                <label for="apartment">Enter Apartment name</label>
+                <input type="text" id="apartment" />
+              </div>
+            </div>
+            <div class="sec_add name_line">
+              <div class="name">
+                <label for="street">Enter Street Details </label>
+                <input type="text" id="street" />
+              </div>
+              <div class="name">
+                <label for="landmark">Enter landmark for easy reachout </label>
+                <input type="text" id="landmark" />
+              </div>
+            </div>
+            <div class="third_add name_line">
+              <div class="name x">
+                <label for="city">Enter City Name </label>
+                <input type="text" id="city" />
+              </div>
+              <div class="name">
+                <label for="area"
+                  ><sup class="star">*</sup> Area Details
+                </label>
+                <input type="text" id="area" />
+              </div>
+              <div class="name">
+                <label for="pin"
+                  ><sup class="star">*</sup> Enter Pincode
+                </label>
+                <input type="text" id="pin" />
+              </div>
+            </div>
+            <p id="nick">choose nick name for this address</p>
+
+            <div id="choose">
+              <div>Home</div>
+              <div>Office</div>
+              <div>Other</div>
+            </div>
+
+            <button id="set_btn">Set Address</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- apply voucher and summary  -->
+      <div id="voucher_summary">
+        <p class="vou_tag">Apply Voucher</p>
+        <div id="vou">
+          <div>
+            <input id="code" type="text" placeholder="Enter Voucher code" />
+            <button id="apl_btn">Apply</button>
+          </div>
+          <button id="vou_btn">1 voucher applicable</button>
+        </div>
+        <p class="vou_tag">Order Summary</p>
+        <div id="sum">
+          <div id="cost">
+            <div class="values">
+              <div class="basket_value">
+                <p>Basket Value</p>
+                <div id="Rs1">10</div>
+              </div>
+              <div class="basket_value">
+                <p>Delivery Charges</p>
+                <div id="Rs2">20</div>
+              </div>
+            </div>
+            <div class="values noBorder">
+              <div class="basket_value">
+                <p class="bv total">Total Amout : </p>
+                <div id="Rs3">10</div>
+              </div>
+              <div id="last">
+                <div id="last_inside">
+                  <p>Total Savings</p>
+                  <div id="Rs4">40</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="msg">
+      <div>
+        <div class="with_icon">
+          <span class="material-icons-outlined"> card_giftcard </span>
+          <p>Is this a Gift order</p>
+        </div>
+        <div id="add_msg">ADD MESSAGE</div>
+      </div>
+      <div>
+        <div class="with_icon">
+          <span class="material-icons-outlined"> all_inbox </span>
+          <p>Delivery Options</p>
+        </div>
+        <button id="pay_btn">PROCEED TO PAYMENT</button>
+      </div>
+      <div>
+        <div class="with_icon">
+          <span class="material-icons-outlined"> payment </span>
+          <p>Payment options</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/checkout.js" >
+
+</script>
