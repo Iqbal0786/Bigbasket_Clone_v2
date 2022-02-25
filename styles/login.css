@@ -23,7 +23,7 @@
     border: none;
     font-size: 16px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 #formDiv>h3{
     text-align: center;
@@ -31,12 +31,17 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     margin-bottom: 10px;
-     padding-top: 20px;
+     padding-top: 25px;
+}
+ #formDiv>#googleBtn{
+    margin-bottom: -5px;
 }
 #formDiv >a{
 text-decoration: none;
 font-family:sans-serif;
 font-size: 15px;
 color: black;
+font-style: italic;
+margin-left: 5px;
 
 }
