@@ -8,24 +8,59 @@ nav_bar.innerHTML = navbar()
 var footer_div = document.getElementById("footer")
 footer_div.innerHTML = footer()
 
-// fetch("http://localhost:9999/products")
+// fetching all products from db
 var Data;
 async function getdata(){
     try{
         let req=await fetch("http://localhost:9999/products");
         let data=await req.json();
         Data=data.data.products;
-        let all=data.data.products
-        console.log(data.data.products);
-        display(all);
+    
+        display(data.data.products);
     }
     catch(err){
         console.log(err);
     }
 }
+// calling getdata()
 getdata();
 
-// calling the display function
+// creating debouncing function
+let inputStr= document.querySelector("#searchbar");
+let search_waiting; // to store searced keywords
+  async function data(){
+    let search=inputStr.value;
+     if(search.length<=2){
+         return false
+     }
+     try{
+        let req=await fetch(`http://localhost:9999/products?s=${search}`);
+        let data=await req.json();
+         Data=data;
+        // let all=data.data.products
+        console.log(data);
+        display(data);
+    }
+    catch(err){
+        console.log(err);
+    }
+ }
+ inputStr.oninput=()=>{
+   
+    deBounce(data,1000);
+    
+ }
+
+ // debounce function
+function deBounce(fun,delay){
+     if(search_waiting){
+         clearTimeout(search_waiting);
+         getdata(); // calling getdata() again to reload the all data from db
+     }
+   search_waiting=setTimeout(()=>{
+          fun();
+      },delay);
+}
 
 
 
