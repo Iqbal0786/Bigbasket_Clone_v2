@@ -14,7 +14,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon src/index"
+    "server": "nodemon src/index",
+    "start": "node src/index"
+
   },
   "repository": {
     "type": "git",
