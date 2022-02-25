@@ -1,5 +1,5 @@
 const express = require("express");
-const connect = require("./confiq/db")
+const connect = require("./configs/db")
 const cors = require("cors")
 const { body, validationResult } = require("express-validator");
 const { register, login } = require("./controller/auth.controller");
