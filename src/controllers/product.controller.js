@@ -12,8 +12,13 @@ router.get("",async(req,res)=>{
             products=await Product.find({name:search}).lean().exec();
             return res.status(200).send(products); 
         }
-     products=await Product.find().lean().exec();
-        return res.status(200).send(products); 
+     const page = +(req.query.page) || 1;
+     const size = +(req.query.limit) || 20;
+     const offset = (page - 1)*size;
+     const totalPages = Math.ceil((await Product.find({}).countDocuments().lean().exec()/size));
+
+     products=await Product.find().skip(offset).limit(size).lean().exec();
+        return res.status(200).send({data:{products,totalPages}}); 
 
     }
     catch(err){

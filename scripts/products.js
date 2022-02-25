@@ -14,9 +14,10 @@ async function getdata(){
     try{
         let req=await fetch("http://localhost:9999/products");
         let data=await req.json();
-        Data=data;
-        console.log(data);
-        display(data);
+        Data=data.data.products;
+        let all=data.data.products
+        console.log(data.data.products);
+        display(all);
     }
     catch(err){
         console.log(err);
