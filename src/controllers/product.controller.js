@@ -37,5 +37,29 @@ router.post("",async(req,res)=>{
     }
 });
 
+router.patch("/:id", async (req, res) => {
+    try {
+      const product = await User.findByIdAndUpdate(req.params.id, req.body, {
+        new: true,
+      })
+        .lean()
+        .exec();
+  
+      res.status(201).send(product);
+    } catch (err) {
+      return res.status(500).send(err.message);
+    }
+  });
+
+  router.delete("/:id", async (req, res) => {
+    try {
+      const product = await User.findByIdAndDelete(req.params.id).lean().exec();
+  
+      res.send(product);
+    } catch (err) {
+      return res.status(500).send(err.message);
+    }
+  });
+
 
 module.exports=router;
