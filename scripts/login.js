@@ -36,3 +36,7 @@
 //         uName.innerHTML = userData.user.name;
 //       }
 //   }
+
+function loginWithGoogle(){
+  window.location.href="http://localhost:9999/auth/google"
+}
