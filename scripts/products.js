@@ -12,7 +12,7 @@ footer_div.innerHTML = footer()
 var Data;
 async function getdata(){
     try{
-        let req=await fetch("http://localhost:9999/products");
+        let req=await fetch("https://bigbasketnewdb.herokuapp.com/products");
         let data=await req.json();
         Data=data.data.products;
     
@@ -34,7 +34,7 @@ let search_waiting; // to store searced keywords
          return false
      }
      try{
-        let req=await fetch(`http://localhost:9999/products?s=${search}`);
+        let req=await fetch(`https://bigbasketnewdb.herokuapp.com/products?s=${search}`);
         let data=await req.json();
          Data=data;
         // let all=data.data.products

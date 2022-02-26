@@ -5,7 +5,7 @@
       let pass = document.querySelector("#password").value;
       let mail = {email: id,
                   password: pass}
-                let response = await fetch("http://localhost:9999/login",{
+                let response = await fetch("https://bigbasketnewdb.herokuapp.com/login",{
                 method:"POST",
                 body:JSON.stringify(mail),
                 headers:{
@@ -38,5 +38,5 @@
 //   }
 
 function loginWithGoogle(){
-  window.location.href="http://localhost:9999/auth/google"
+  window.location.href="https://bigbasketnewdb.herokuapp.com/auth/google"
 }

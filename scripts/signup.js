@@ -11,7 +11,7 @@ async function registerUser() {
                         email:document.querySelector("#email").value,
                         password: document.getElementById("password").value
                       };
-            let response = await fetch("http://localhost:9999/register",{
+            let response = await fetch("https://bigbasketnewdb.herokuapp.com/register",{
                 method:"POST",
                 body:JSON.stringify(mail),
                 headers:{
